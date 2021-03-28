@@ -146,17 +146,50 @@ section{
 #secundary-screen .publication{
     width: 50%;
 
-}
+} 
 #secundary-screen .publication h1{
     font-family: 'gilroy';
     text-transform: uppercase;
     font-weight: 800;
     font-size: 24px;
-    
+    color: white;
 }
 
 #secundary-screen .publication p{
     font-family: 'gilroy';
     font-weight: 100;
+    font-size: 18px;
+    color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:#190e2a ;
+    padding: 0 100px;
+}
+
+footer .info {
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 130px;
+} 
+
+footer .info .personal-info{
+    display: flex;
+    align-items: center;
+    font-family: "gilroy";
+    color: white;
+}
+
+footer .info .personal-info img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+footer .info .personal-info h1{
     font-size: 18px;
 }
