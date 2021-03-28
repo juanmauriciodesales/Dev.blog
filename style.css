@@ -20,6 +20,18 @@ body{
     ;
 }
 
+input, textarea{
+    font-family: "gilroy";
+    font-family: 100;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+input::placeholder, textarea::placeholder{
+    color: black;
+}
+
 header{
     display:flex;
     height: 100px;
@@ -162,6 +174,45 @@ section{
     color: white;
 }
 
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#contact form h1{
+    font-family: "gilroy";
+    font-weight: 800;
+    font-size: 45px;
+    color:white;
+    text-align: center;
+}
+
+#contact form button{
+    color: white;
+    align-self: center;
+    border: none;
+    cursor: pointer;    
+    background-color: #190e2a;
+    padding: 12px 16px;
+    font-family: "gilroy";
+    font-weight: 100;
+    transition: background-color 0.4s;
+}
+#contact form button:hover{
+    background-color: #10071d;
+}
+#contact form * {
+margin: 12px 0;
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -173,6 +224,7 @@ footer{
 footer .info {
 display: flex;
 justify-content: space-between;
+align-items: center;
 width: 100%;
 height: 130px;
 } 
@@ -193,3 +245,28 @@ footer .info .personal-info img{
 footer .info .personal-info h1{
     font-size: 18px;
 }
+
+footer .info .contact{
+    text-align: right;
+    font-family: "gilroy";
+    color: white;
+}  
+
+footer .info .contact h1 {
+font-size: 18px;
+} 
+
+footer .links a {
+    text-decoration: none;
+}
+
+footer .links svg{
+    fill: white;
+    width: 20px;
+    margin: 10px 5px;
+    transition: fill 0.4s;
+}
+
+footer .links svg:hover{
+    fill: #10071d;
+} 
